@@ -5,14 +5,14 @@ int main()
 	int n;
 	cout<<"Enter the number of elements";
 	cin>>n;
-	int a[n],swapped=0;//to optimize the time complexity incase of sorted array
+	int a[n],swapped=0;
 	for(int i=0;i<n;i++)
 	{
 		cin>>a[i];
 	}
 	for(int i=0;i<n-1;i++)//to increment i value 
 	{
-		for(int j=0;j<n-i-1;j++)//to increment next value
+		for(int j=0;j<n-i-1;j++)
 		{
 			if(a[j]>a[j+1])
 			{
